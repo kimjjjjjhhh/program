@@ -1,0 +1,116 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+#enterButton1 {
+    font-size: 12px;
+    color: white;
+    background-color: #0D326F;
+    padding: 10px 20px;
+    border: [];
+    cursor: pointer;
+}
+
+#enterButton2 {
+    font-size: 12px;
+    color: white;
+    background-color: #A40F16;
+    padding: 10px 20px;
+    border: [];
+    cursor: pointer;
+}
+
+#enterButton1:hover {
+    background-color: #2B508D;
+}
+
+#enterButton2:hover {
+    background-color: #C22D34;
+}
+
+#scheduleDisplay {
+    margin-top: 20px;
+}
+
+#roomInput {
+    display: none;
+    margin-top: 10px;
+}
+
+#roomstate {
+    display: none;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#roomSubmit {
+    font-size: 16px;
+    margin-top: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#locationInfo {
+    display: none;
+    margin-top: 20px;
+}
+
+/* CSS 스타일 수정 */
+#backButton {
+    font-size: 16px;
+    margin-top: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#backButton:hover {
+    background-color: #AAAAAA;
+}
+
+#refreshButton {
+    font-size: 16px;
+    margin-top: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+select {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 0px;
+}
+
+form {
+    display: inline;
+    margin-right: 0px;
+}
+
+#floorImage {
+    display: none;
+    width: 480px;
+    height: 360px;
+    background-size: cover;
+    background-position: center center;
+    margin: 0px;
+    float: right;
+    background-color: transparent;
+}
+
+.class-in-session {
+    background-color: rgb(239, 108, 108);
+}
+
+.class-not-in-session {
+    background-color: rgb(115, 224, 115);
+}

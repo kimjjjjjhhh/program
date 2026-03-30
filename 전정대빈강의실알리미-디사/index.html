@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>전정대 빈강의실 알리미</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="khu.ico" rel="shortcut icon" type="image/x-icon">
+</head>
+
+<body>
+    <div id="main" style="text-align: center;">
+        <img id="khu" src="khu_final.png" alt="전정대 로고" style="margin-bottom: 20px;" width="268" height="201">
+        <h1>전정대 빈강의실 알리미</h1>
+        <button id="enterButton1">강의실 시간표 검색하기</button>
+        <button id="enterButton2">강의실 수업 현황 보기</button>
+    </div>
+    <div id="roomInput">
+        <input type="text" id="roomNumber" placeholder="강의실 번호 입력 ex) B01, 101, 211-1" size="30">
+        <button id="roomSubmit" onclick="searchRoom()">검색</button>
+        <button id="backButton" onclick="goBack()">뒤로가기</button>
+    </div>
+    <div id="roomstate">
+        <div>
+            <form name='selectForm'>
+                <select name='floor'>
+                    <option value='all'>전체</option>
+                    <option value='B'>B1층</option>
+                    <option value='1'>1층</option>
+                    <option value='2'>2층</option>
+                    <option value='4'>4층</option>
+                    <option value='5'>5층</option>
+                </select>
+            </form>
+            <button id="refreshButton" onclick="refresh()">새로고침</button>
+            <button id="backButton" onclick="goBack()">뒤로가기</button>
+        </div>
+    </div>
+    <div id="floorImage"></div>
+    <div id="scheduleDisplay"></div>
+    <div id="locationInfo">
+        <h2 id="locationTitle"></h2>
+        <p id="locationContent"></p>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
